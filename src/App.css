@@ -1,0 +1,162 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(35, 15, 74);
+  color: aliceblue;
+}
+
+.App{
+  background: rgba(1, 16, 39, 0.814);
+  height: 100vh;
+  backdrop-filter: blur(100px);
+  overflow-y: hidden;
+  position: relative;
+  padding: 20px;
+}
+a{
+  text-decoration: none;
+}
+
+.App-Bg{
+  background: rgba(115, 116, 118, 0.321);
+  height: 100%;
+  top: 15px;
+  left: 23px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.scroll{
+  width: 97%;
+  height: 100%;
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+}
+.btn-primary{
+  background-color: rgb(127 175 217 / 25%) !important;
+  border: 0px;
+}
+.btn-primary:hover{
+  background-color: rgba(130, 152, 170, 0.615) !important;
+}
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.navigation-bar{
+  background: rgb(127 175 217 / 25%);
+}
+.navigation-bar li a{
+  color: aliceblue;
+  font-size: 20px;
+}
+.navigation-bar li a:hover{
+  color: antiquewhite;
+}
+textarea{
+  background: rgb(127 175 217 / 25%) !important;
+  color: aliceblue !important;
+ border: 0 !important;
+ outline: 0;
+}
+textarea:focus{
+  outline: 0 !important;
+  border: 0;
+  box-shadow: none !important;
+}
+.headText{
+  color: #64FFDA;
+}
+.previewText{
+  height: 100%;
+  background: rgb(127 175 217 / 25%);
+  padding: 10px;
+}
+
+.Appcircle .Circleone{
+ height: 20rem;
+ width: 30rem;
+ background-color: rgba(213, 118, 235, 0.822);
+ position: fixed;
+ bottom: 100px;
+ border-radius: 50%;
+ z-index: -1;
+}
+
+.Appcircle .Circletwo{
+  height: 40rem;
+  width: 30rem;
+  background-color: rgba(228, 230, 234, 0.851);
+  position: fixed;
+  top: -100px;
+  right: -100px;
+  border-radius: 50%;
+  z-index: -1;
+ }
+
+ .active{
+  color: #64FFDA !important;
+ }
+
+.About{
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+ .About .box .img{
+	position: absolute;
+    right: 27px;
+}
+.About .box .imgbox{
+	position: relative;
+	max-width: 300px;
+	max-height: 300px;	
+}
+.About .box .imgbox  img{
+	max-width: 200px;
+	max-height: 200px;
+	margin: 0 auto;
+	border: 3px;
+	z-index: 1;
+	position: relative;
+}
+.About .box .imgbox::after{
+	content: " ";
+	position: absolute;
+	height: 200px;
+	width: 200px;
+	border: 1px #64FFDA;
+	left: 10px;
+    top: 10px;
+    z-index: -1;
+	border-radius: 3px;
+
+}
+.About .box .imgbox::before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	height: 200px;
+	width: 194px;
+	border-radius: 5px;
+	z-index: 1;
+	background-color:#64FFDA;
+}
+
+.About .Textbox{
+  margin: 30px 0;
+  text-align: justify;
+  max-width: 500px;
+}
+
+.About .Textbox .copyRight{
+  text-align: center;
+  margin: 50px 0;
+}
